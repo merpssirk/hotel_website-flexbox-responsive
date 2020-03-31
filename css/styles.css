@@ -1,0 +1,308 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6em; /*between the line*/
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/*utility Classes*/
+
+
+.container {
+    margin: auto;
+    max-width: 1100px; /*yasle HBT lai left bat ali kati bichtira puryauna madat garchha*/
+    overflow: auto; /*yo rakhyo bhane kunai pani html text jun .container bhitra hunchha tyo yasari aaunchha, yasko flow auto hunchha*/
+    padding: 0 20px;
+}
+.bg-dark {
+    color: #fff;
+    background: #333;
+}
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-primary {
+    background: #f7c08a;
+    color: #333;
+}
+.btn {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    padding: 13px 20px;
+    /*border: 1px solid red;*/
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #f7c08a;
+    color: #333;
+}
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+/* Padding Start */
+.py-1 {
+    padding: 10px 0;
+}
+.py-2 {
+    padding: 20px 0;
+}
+.py-3 {
+    padding: 30px 0;
+}
+
+/* Padding End */
+
+/* large Heading */
+
+.l-heading {
+    font-size: 40px;
+}
+
+/* navbar start*/
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar {
+    background-color: #333; /*yo navbar ko color change garchha*/
+    color: #fff;
+    overflow: auto;
+}
+.navbar a {
+    color: #fff; /*yasle navbar ko sabai text haru seto banaunchha*/
+}
+.navbar h1{
+    /* float: left; */
+    padding-top: 15px; /*Yasle HBT lai bichma, navbar ko bichma layaune kam garchha*/
+}
+.navbar ul {
+    display: flex;
+   /*  float: right;  *//*yasle Home About Contact lai right side of the page ma lier janchha*/
+    list-style-type: none; /*yasle Home About Contact ko agadi bhaeko sano kalo bindu hataune kam garchha*/
+}
+/*.navbar ul li {
+     float: left; */ /*yasle Home About Contact lai Eutai line ma banaunchha
+}*/
+.navbar ul li a {
+    display: block;
+    padding: 15px; /*yasle Home About Contact lai navbar ko bichma layauna madat garchha*/
+    text-align: center;
+}
+.navbar ul li a:hover,
+.navbar ul li a.current { /* Html yasto dekhinu parchha<li> <a class="current" href="index.html">Home</a></li>*/
+    background: #444; /*yasle nav list ma bhaeko text haru ko najik mouse lier janda color change garchha*/
+    color: #f7c080; /*yasle nave list ko text hahur ko color change garcha, mouse lier janda*/
+}
+/* navbar end */
+
+
+
+
+/* Showcase start*/
+#showcase {
+    height: 600px; /*Yasle picture ko height thulo or sano banauna madat garchha*/
+    background: url('../img/showcase.jpg')no-repeat center center/cover; /*yasle hamro picture lai center ma rakhchha, responsive jasto kam garchha*/
+    /*background-image: url('../img/showcase.jpg');
+    background-repeat: no-repeat;
+    background-position: center center/cover; yo comment ko tin wata value ra background ma rakhieko value le eutai kam garchha*/
+}
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center; /*yasle text haru center ma rakchha*/
+    padding-top: 200px; /*yasle text haru tala lyauna madat garchha*/
+}
+#showcase .showcase-content h1 {
+    font-size: 60px; /*Yasle "Enjoy Your Stay ko text haru thulo banauna madat garchha" kina yasto rakhiyo? "#showcase .showcase-content h1" yasle html ko yo showcase ko bhitra ko h1 ko matrai font thulo banaunchha*/
+    line-height: 1.5em; /*yasle "Enjoy Your Stay" bhanda talako space thulo banaune kam garchha*/
+}
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+#showcase .showcase-content a { /*yo field "About Our Hotel" phrase ko lagi */
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    padding: 13px 20px;
+    /*border: 1px solid red;*/
+    border: none;
+}
+
+#showcase .showcase-content a:hover {
+    background: #f7c08a;
+    color: #333;
+}
+
+.text-primary { /*yo "Enjoy" Bhanne text ko lagi garieko ho, html ma hamile span garera banaeko ho*/
+    color: #f7c08a;
+}
+
+/* Showcase end */
+
+
+/* home-info start*/
+#home-info {
+    display: flex;
+    height: 400px;
+}
+
+#home-info .info-img {
+    background: url('../img/photo-1.jpg') no-repeat;
+    min-height: 100%;
+   /*  float: left; */
+    width: 50%;
+}
+
+#home-info .info-content{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    overflow: hidden; /*text will be hidden when we make page smaller*/
+    padding: 50px 50px;
+}
+
+#home-info .info-content p {
+    padding: 20px;
+}
+
+/* Home-info end */
+
+
+/* Features start */
+#features {
+    display: flex;
+}
+.box {
+    width: 33.3%;
+    text-align: center;
+    padding: 50px;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+#main-footer {
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px; 
+}
+
+.clr {
+    clear: both;
+}
+
+/* Features end */
+
+
+/* About-info Start */
+#about-info .container{
+    display: flex;
+}
+#about-info .info-right {
+    /* border: 1px solid red; */
+    /* float: right; */
+    width: 50%;
+    min-height: 100%;
+    /* text-align: center; yasle pani picture lai center ma rakhna madat garchh*/
+}
+
+#about-info .info-right img {
+   display: block; /* yo duita value le image lai middle ma rakhna madat garchha */ 
+    margin: auto; 
+    width: 70%;
+    border-radius: 50%;
+}
+
+#about-info .info-left {
+    /* float: left; */
+    width: 50%;
+}
+#about-info h1 {
+    line-height: .8em;
+}
+#comments .container {
+    display: flex;
+    flex-direction: column;
+}
+#comments {
+    background: url('../img/test-bg.jpg')
+     no-repeat center center/cover;
+    padding-top: 100px;
+}
+#comments h2 {
+    line-height: .8em;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+    /* text-shadow: -10px 0 rgb(6, 20, 143), 0 12px #000, 12px 0 #000, 0 -12px; */
+    text-shadow: 2px 2px 3px white, 3px 3px 5px white;
+}
+#comments .comment {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    opacity: 0.8; 
+    display: flex;
+}
+#comments .comment img {
+    width: 100px;
+    border-radius: 50%;
+   /*  float: left; */
+    margin-right: 20px;
+    opacity: 1;
+}
+
+/* contact form start */
+.container h1 {
+    line-height: .8em;
+}
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: x-large;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+#contact-form textarea {
+    height: 200px;
+    
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #f7c08a;
+}
+#contact-form p {
+    font-size: x-large;
+}
+#contact-info .container {
+    display: flex;
+}
